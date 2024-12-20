@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+canvas {
+    border: 1px solid #ccc;
+    flex-grow: 1;
+    width: 100%;
+}
+.clear-button, .random-size-button {
+    padding: 10px 20px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin: 10px;
+    margin-right: auto; /* Push the button to the left */
+}
+.clear-button:hover, .random-size-button:hover {
+    background-color: #3700b3;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #6200ea;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    justify-content: flex-start; /* Align items to the left */
+    width: 90%; /* Ensure the container takes full width */
+}
+
+.toggle-label {
+    font-size: 16px;
+    margin-left: 10px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Add margin for the new gravity toggle */
+.toggle-label + .switch {
+    margin-left: 20px;
+}
+
+.counter-container {
+    position: fixed; /* Change to fixed to ensure it stays at the top */
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #333;
+    z-index: 1000; /* Ensure it is above other elements */
+}
+
+.counter-label {
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #333;
+    margin-left: auto; /* Push the counter to the right */
+}
+
+#graphCanvas {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 300px;
+    height: 150px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+#resetGraphButton {
+    position: fixed;
+    bottom: 170px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#resetGraphButton:hover {
+    background-color: #3700b3;
+}
+
+.size-slider {
+    margin: 10px;
+    width: 200px;
+}
+.size-label {
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px;
+}
+
+/* ...existing code... */
+.partition {
+    width: 1px;
+    height: 34px;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+.random-size-label {
+    font-size: 16px;
+    margin-left: 10px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #333;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Gravity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="button-container">
+        <button class="clear-button" onclick="clearEmojis()">Clear</button>
+        <div class="partition"></div>
+        <label class="switch">
+            <input type="checkbox" onclick="toggleSolid()">
+            <span class="slider round"></span>
+        </label>
+        <span class="toggle-label">Solid Objects</span>
+        <div class="partition"></div>
+        <label class="switch">
+            <input type="checkbox" onclick="toggleSound()" checked>
+            <span class="slider round"></span>
+        </label>
+        <span class="toggle-label">Sound</span>
+        <div class="partition"></div>
+        <label class="switch">
+            <input type="checkbox" onclick="toggleGravity()" checked>
+            <span class="slider round"></span>
+        </label>
+        <span class="toggle-label">Gravity</span>
+        <div class="partition"></div>
+        <input type="range" min="10" max="50" value="20" class="size-slider" oninput="changeEmojiSize(event)">
+        <span class="size-label">Emoji Size</span>
+        <div class="partition"></div>
+        <label class="switch">
+            <input type="checkbox" onclick="toggleRandomSize()">
+            <span class="slider round"></span>
+        </label>
+        <span class="random-size-label">Random Size</span>
+        <span id="emojiCounter" class="counter-label">Emojis: 0</span>
+    </div>
+    <canvas id="emojiCanvas"></canvas>
+    <canvas id="graphCanvas"></canvas>
+    <button id="resetGraphButton" onclick="resetGraph()">Reset Graph</button>
+    <audio id="collisionSound" src="collision.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
