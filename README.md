@@ -7,6 +7,12 @@ Emoji Gravity is a fun web application that simulates emojis falling under the i
 - Click on the canvas to generate random emojis.
 - Emojis bounce off the edges of the canvas and each other.
 - A clear button to remove all emojis from the screen.
+- Toggle gravity on and off.
+- Toggle sound effects on and off.
+- Toggle solid partition on and off.
+- Adjustable emoji size with an option for random sizes.
+- Smooth transitions for the graph displaying emoji counts over time.
+- Grid lines, axis labels, and data points on the graph for better readability.
 
 ## Getting Started
 
@@ -22,8 +28,11 @@ Emoji Gravity is a fun web application that simulates emojis falling under the i
 ### Usage
 - Click anywhere on the canvas to create a burst of emojis.
 - Click the "Clear" button to reset the canvas.
+- Use the toggle buttons to enable or disable gravity, sound, and solid partition.
+- Adjust the emoji size using the provided controls.
 
 ## Future Improvements
 - Add more emoji options.
 - Implement mobile touch support.
 - Enhance the collision detection algorithm for better performance.
+- Add more interactive controls for customizing the simulation.
