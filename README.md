@@ -4,7 +4,8 @@
 Emoji Gravity is a fun web application that simulates emojis falling under the influence of gravity. Users can click on the canvas to generate random emojis that bounce around the screen. The application features a modern design and interactive elements.
 
 ## Screenshot
-![ezgif-1-c364e557d5](https://github.com/user-attachments/assets/29dd7dfd-2446-49db-b5dd-756ae8fe2ed9)
+![ezgif-1-18e1ad6505](https://github.com/user-attachments/assets/de2a8f49-36a2-4b2c-b137-d2371256e10b)
+
 
 
 ## Features
